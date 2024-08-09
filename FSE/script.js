@@ -27,15 +27,18 @@ function toggleMenu() {
 //   window.location.href = "login.html"; // Redirect back to the login page
 // }
 
-var localhost = "http://127.0.0.1:5500/FSE";
+// var localhost = "http://127.0.0.1:5500/FSE";
 
 function updateLinks() {
   const links = document.querySelectorAll('a[id]'); // Get all anchor tags with IDs
   links.forEach(link => {
     const href = link.id.replace('-link', ''); // Remove '-link' from the ID
-    link.href = `${localhost}/${href.charAt(0).toUpperCase()}${href.slice(1)}.html`;
+    link.href = `${href.charAt(0).toUpperCase()}${href.slice(1)}.html`; // Use relative paths
   });
 }
+
+document.addEventListener("DOMContentLoaded", updateLinks);
+
 
 document.addEventListener("DOMContentLoaded", updateLinks); // Call the function once the DOM content is loaded
 
