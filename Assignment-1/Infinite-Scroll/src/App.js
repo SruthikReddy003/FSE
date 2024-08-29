@@ -4,7 +4,7 @@ import NewsFeed from './pages/NewsFeed';
 const App = () => {
   return (
     <div className="App">
-      <h1>News Feed</h1>
+      <h1>Political News Feed</h1>
       <NewsFeed />
     </div>
   );
