@@ -1,3 +1,5 @@
 
 /Assignment-1/node_modules
 /Assignment-1/Infinite-Scroll/node_modules
+/Assignment-1/Real-Time Voting System/node_modules
+*.lock
